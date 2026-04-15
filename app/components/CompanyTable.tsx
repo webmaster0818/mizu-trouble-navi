@@ -2,7 +2,7 @@ import { companies } from "@/app/lib/data";
 
 export default function CompanyTable({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
       <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-primary text-white">
@@ -18,7 +18,7 @@ export default function CompanyTable({ compact = false }: { compact?: boolean })
         </thead>
         <tbody>
           {companies.map((c) => (
-            <tr key={c.id} className="border-b border-gray-200 hover:bg-blue-50 transition">
+            <tr key={c.id} className="border-b border-gray-100 hover:bg-bg-light transition">
               <td className="p-3">
                 <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-xs ${
                   c.rank === 1 ? "bg-yellow-500" : c.rank === 2 ? "bg-gray-400" : c.rank === 3 ? "bg-amber-600" : "bg-gray-300"
@@ -27,7 +27,7 @@ export default function CompanyTable({ compact = false }: { compact?: boolean })
                 </span>
               </td>
               <td className="p-3 font-bold whitespace-nowrap">{c.name}</td>
-              <td className="p-3 whitespace-nowrap text-accent font-bold">{c.basePrice}</td>
+              <td className="p-3 whitespace-nowrap text-cta font-bold">{c.basePrice}</td>
               <td className="p-3 whitespace-nowrap">{c.dispatchFee}</td>
               <td className="p-3 whitespace-nowrap">{c.availableHours}</td>
               <td className="p-3 whitespace-nowrap">{c.responseTime}</td>

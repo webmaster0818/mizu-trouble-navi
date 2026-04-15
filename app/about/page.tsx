@@ -11,16 +11,16 @@ export default function AboutPage() {
     <>
       <Breadcrumb items={[{ label: "ホーム", href: "/" }, { label: "運営者情報" }]} />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">運営者情報</h1>
-        <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+        <h1 className="text-3xl font-bold text-heading mb-8">運営者情報</h1>
+        <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
           <table className="w-full text-sm">
             <tbody>
-              <tr className="border-b"><th className="bg-gray-50 p-4 text-left w-1/3">サイト名</th><td className="p-4">水トラブル解決ナビ</td></tr>
-              <tr className="border-b"><th className="bg-gray-50 p-4 text-left">URL</th><td className="p-4">https://mizu-trouble-navi.pages.dev</td></tr>
-              <tr className="border-b"><th className="bg-gray-50 p-4 text-left">運営者</th><td className="p-4">水トラブル解決ナビ編集部</td></tr>
-              <tr className="border-b"><th className="bg-gray-50 p-4 text-left">メール</th><td className="p-4">info@mizu-trouble-navi.pages.dev</td></tr>
-              <tr className="border-b"><th className="bg-gray-50 p-4 text-left">サイトの目的</th><td className="p-4">水道修理業者の比較情報を提供し、利用者が最適な業者を選べるようサポートすること</td></tr>
-              <tr><th className="bg-gray-50 p-4 text-left">免責事項</th><td className="p-4">当サイトに掲載している情報は、可能な限り正確な情報を提供するよう努めていますが、正確性・完全性を保証するものではありません。当サイトの情報を利用して生じた損害について、一切の責任を負いかねます。</td></tr>
+              <tr className="border-b"><th className="bg-bg-light p-4 text-left w-1/3">サイト名</th><td className="p-4">水トラブル解決ナビ</td></tr>
+              <tr className="border-b"><th className="bg-bg-light p-4 text-left">URL</th><td className="p-4">https://mizu-trouble-navi.pages.dev</td></tr>
+              <tr className="border-b"><th className="bg-bg-light p-4 text-left">運営者</th><td className="p-4">水トラブル解決ナビ編集部</td></tr>
+              <tr className="border-b"><th className="bg-bg-light p-4 text-left">メール</th><td className="p-4">info@mizu-trouble-navi.pages.dev</td></tr>
+              <tr className="border-b"><th className="bg-bg-light p-4 text-left">サイトの目的</th><td className="p-4">水道修理業者の比較情報を提供し、利用者が最適な業者を選べるようサポートすること</td></tr>
+              <tr><th className="bg-bg-light p-4 text-left">免責事項</th><td className="p-4">当サイトに掲載している情報は、可能な限り正確な情報を提供するよう努めていますが、正確性・完全性を保証するものではありません。当サイトの情報を利用して生じた損害について、一切の責任を負いかねます。</td></tr>
             </tbody>
           </table>
         </div>

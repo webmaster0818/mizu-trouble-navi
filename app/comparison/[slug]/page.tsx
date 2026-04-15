@@ -27,8 +27,8 @@ export async function generateMetadata({
 
 function PriceComparison() {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm border-collapse border border-gray-200">
+    <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+      <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-primary text-white">
             <th className="p-3 text-left">業者名</th>
@@ -40,14 +40,14 @@ function PriceComparison() {
           </tr>
         </thead>
         <tbody>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">クラシアン</td><td className="p-3 text-accent font-bold">8,800円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 text-accent font-bold">5,500円~</td><td className="p-3">無料</td><td className="p-3">あり（3,000~5,000円）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">イースマイル</td><td className="p-3 text-accent font-bold">8,800円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3 text-accent font-bold">4,400円~</td><td className="p-3">3,300円</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">要確認</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">生活水道センター</td><td className="p-3 text-accent font-bold">5,000円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">要確認</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">クラシアン</td><td className="p-3 text-cta font-bold">8,800円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 text-cta font-bold">5,500円~</td><td className="p-3">無料</td><td className="p-3">あり（3,000~5,000円）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">イースマイル</td><td className="p-3 text-cta font-bold">8,800円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">無料</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3 text-cta font-bold">4,400円~</td><td className="p-3">3,300円</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">要確認</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">生活水道センター</td><td className="p-3 text-cta font-bold">5,000円~</td><td className="p-3">無料</td><td className="p-3">あり（要確認）</td><td className="p-3">無料</td><td className="p-3">要確認</td></tr>
         </tbody>
       </table>
-      <div className="mt-6 bg-gray-50 p-5 rounded-lg">
+      <div className="mt-6 bg-bg-light p-5 rounded-b-2xl">
         <h3 className="font-bold mb-3">料金比較のポイント</h3>
         <ul className="text-sm text-gray-700 space-y-2">
           <li>基本料金が最も安いのは<strong>水道屋本舗（4,400円~）</strong>ですが、出張費3,300円が別途かかります。</li>
@@ -62,8 +62,8 @@ function PriceComparison() {
 
 function SpeedComparison() {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm border-collapse border border-gray-200">
+    <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+      <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-primary text-white">
             <th className="p-3 text-left">業者名</th>
@@ -75,14 +75,14 @@ function SpeedComparison() {
           </tr>
         </thead>
         <tbody>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">クラシアン</td><td className="p-3 font-bold">最短30分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50 bg-green-50"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 font-bold text-accent">最短15分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">イースマイル</td><td className="p-3 font-bold">最短20分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3 font-bold">最短30分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">生活水道センター</td><td className="p-3 font-bold">最短30~60分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">クラシアン</td><td className="p-3 font-bold">最短30分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light bg-bg-light"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 font-bold text-cta">最短15分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">イースマイル</td><td className="p-3 font-bold">最短20分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3 font-bold">最短30分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">生活水道センター</td><td className="p-3 font-bold">最短30~60分</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td><td className="p-3 text-success">対応</td></tr>
         </tbody>
       </table>
-      <div className="mt-6 bg-gray-50 p-5 rounded-lg">
+      <div className="mt-6 bg-bg-light p-5 rounded-b-2xl">
         <h3 className="font-bold mb-3">スピード比較のポイント</h3>
         <ul className="text-sm text-gray-700 space-y-2">
           <li>最速は<strong>水の救急隊（最短15分）</strong>。緊急性の高いトラブルに最適です。</li>
@@ -96,8 +96,8 @@ function SpeedComparison() {
 
 function WarrantyComparison() {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm border-collapse border border-gray-200">
+    <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+      <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-primary text-white">
             <th className="p-3 text-left">業者名</th>
@@ -108,14 +108,14 @@ function WarrantyComparison() {
           </tr>
         </thead>
         <tbody>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">クラシアン</td><td className="p-3">1~5年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 font-bold text-accent">最大5年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">イースマイル</td><td className="p-3">最大3年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3">1~3年</td><td className="p-3">要確認</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">生活水道センター</td><td className="p-3">1~3年</td><td className="p-3">要確認</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">クラシアン</td><td className="p-3">1~5年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水の救急隊</td><td className="p-3 font-bold text-cta">最大5年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">イースマイル</td><td className="p-3">最大3年</td><td className="p-3 text-success">加入</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3">1~3年</td><td className="p-3">要確認</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">生活水道センター</td><td className="p-3">1~3年</td><td className="p-3">要確認</td><td className="p-3">電話サポート</td><td className="p-3 text-success">対応</td></tr>
         </tbody>
       </table>
-      <div className="mt-6 bg-gray-50 p-5 rounded-lg">
+      <div className="mt-6 bg-bg-light p-5 rounded-b-2xl">
         <h3 className="font-bold mb-3">保証比較のポイント</h3>
         <ul className="text-sm text-gray-700 space-y-2">
           <li>施工保証が最も充実しているのは<strong>水の救急隊（最大5年）</strong>とクラシアン。</li>
@@ -128,10 +128,9 @@ function WarrantyComparison() {
 }
 
 function AreaCoverageComparison() {
-  const prefectures = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州"];
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm border-collapse border border-gray-200">
+    <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+      <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-primary text-white">
             <th className="p-3 text-left">業者名</th>
@@ -145,15 +144,15 @@ function AreaCoverageComparison() {
           </tr>
         </thead>
         <tbody>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">クラシアン</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水の救急隊</td><td className="p-3">主要都市</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">イースマイル</td><td className="p-3">関東中心</td><td className="p-3 text-center text-danger">&#10005;</td><td className="p-3 text-center text-danger">&#10005;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
-          <tr className="border-b hover:bg-blue-50"><td className="p-3 font-bold">生活水道センター</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">クラシアン</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水の救急隊</td><td className="p-3">主要都市</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">イースマイル</td><td className="p-3">関東中心</td><td className="p-3 text-center text-danger">&#10005;</td><td className="p-3 text-center text-danger">&#10005;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-warning">&#9651;</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">水道屋本舗</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
+          <tr className="border-b border-gray-100 hover:bg-bg-light"><td className="p-3 font-bold">生活水道センター</td><td className="p-3">全国</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td><td className="p-3 text-center text-success">&#9675;</td></tr>
         </tbody>
       </table>
-      <p className="text-xs text-gray-500 mt-2">&#9675;=対応 &#9651;=一部対応 &#10005;=非対応</p>
-      <div className="mt-6 bg-gray-50 p-5 rounded-lg">
+      <p className="text-xs text-gray-500 mt-2 px-3 pb-3">&#9675;=対応 &#9651;=一部対応 &#10005;=非対応</p>
+      <div className="bg-bg-light p-5 rounded-b-2xl">
         <h3 className="font-bold mb-3">エリア比較のポイント</h3>
         <ul className="text-sm text-gray-700 space-y-2">
           <li>全国対応なのは<strong>クラシアン・水道屋本舗・生活水道センター</strong>の3社。</li>
@@ -169,14 +168,14 @@ function ReviewsComparison() {
   return (
     <div>
       {companies.map((c) => (
-        <div key={c.id} className="mb-8 bg-white border border-gray-200 rounded-lg p-6">
+        <div key={c.id} className="mb-8 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
           <div className="flex items-center gap-3 mb-4">
             <h3 className="text-lg font-bold">{c.name}</h3>
-            <span className="text-accent font-bold">{c.rating}/5.0</span>
+            <span className="text-cta font-bold">{c.rating}/5.0</span>
             <span className="text-gray-500 text-sm">（{c.reviewCount.toLocaleString()}件）</span>
           </div>
           <div className="grid md:grid-cols-2 gap-4 mb-3">
-            <div className="bg-green-50 p-4 rounded-lg">
+            <div className="bg-green-50 p-4 rounded-2xl">
               <h4 className="font-bold text-success text-sm mb-2">良い口コミ</h4>
               <ul className="text-sm space-y-1">
                 {c.pros.map((p, i) => (
@@ -184,7 +183,7 @@ function ReviewsComparison() {
                 ))}
               </ul>
             </div>
-            <div className="bg-red-50 p-4 rounded-lg">
+            <div className="bg-red-50 p-4 rounded-2xl">
               <h4 className="font-bold text-danger text-sm mb-2">悪い口コミ</h4>
               <ul className="text-sm space-y-1">
                 {c.cons.map((con, i) => (
@@ -218,7 +217,7 @@ export default async function ComparisonPage({
       ]} />
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">水道修理業者5社の{page.name}</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-heading mb-4">水道修理業者5社の{page.name}</h1>
         <p className="text-gray-600 mb-8">{page.description}</p>
 
         {slug === "price" && <PriceComparison />}
@@ -236,11 +235,11 @@ export default async function ComparisonPage({
           <h2 className="text-xl font-bold mb-4">その他の比較</h2>
           <div className="flex flex-wrap gap-3">
             {comparisonPages.filter(p => p.slug !== slug).map((p) => (
-              <Link key={p.slug} href={`/comparison/${p.slug}/`} className="px-4 py-2 border border-primary text-primary rounded-lg text-sm hover:bg-primary hover:text-white transition">
+              <Link key={p.slug} href={`/comparison/${p.slug}/`} className="px-4 py-2 border border-primary text-primary rounded-full text-sm hover:bg-primary hover:text-white transition">
                 {p.name}
               </Link>
             ))}
-            <Link href="/ranking/" className="px-4 py-2 border border-accent text-accent rounded-lg text-sm hover:bg-accent hover:text-white transition">
+            <Link href="/ranking/" className="px-4 py-2 border border-cta text-cta rounded-full text-sm hover:bg-cta hover:text-white transition">
               総合ランキング
             </Link>
           </div>

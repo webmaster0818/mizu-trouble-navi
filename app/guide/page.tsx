@@ -20,14 +20,14 @@ export default function GuidePage() {
     <>
       <Breadcrumb items={[{ label: "ホーム", href: "/" }, { label: "水トラブル対処ガイド" }]} />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">水トラブル対処ガイド</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-heading mb-4">水トラブル対処ガイド</h1>
         <p className="text-gray-600 mb-10">水トラブルが発生した時の応急処置方法と、信頼できる業者の選び方を解説します。</p>
 
         {/* 応急処置 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-accent pl-4">水トラブル発生時の応急処置</h2>
-          <div className="bg-accent-light border border-accent/20 rounded-lg p-6 mb-6">
-            <p className="font-bold text-accent mb-2">まず落ち着いて、以下の手順で対処してください。</p>
+          <h2 className="text-2xl font-bold mb-6 border-l-4 border-cta pl-4">水トラブル発生時の応急処置</h2>
+          <div className="bg-cta-light border border-cta/20 rounded-2xl p-6 mb-6">
+            <p className="font-bold text-cta mb-2">まず落ち着いて、以下の手順で対処してください。</p>
           </div>
 
           <div className="space-y-6">
@@ -36,7 +36,7 @@ export default function GuidePage() {
               <div>
                 <h3 className="text-lg font-bold mb-2">止水栓・元栓を閉める</h3>
                 <p className="text-gray-600 text-sm">水漏れや溢れが続く場合、まず水を止めることが最優先です。各器具の近くにある止水栓を時計回りに回してください。止水栓が見つからない場合は、水道メーター横の元栓（家全体の水を止める）を閉めましょう。</p>
-                <div className="bg-gray-50 p-4 rounded-lg mt-3">
+                <div className="bg-bg-light p-4 rounded-2xl mt-3">
                   <p className="text-sm font-bold text-gray-700 mb-2">止水栓の場所:</p>
                   <ul className="text-xs text-gray-600 space-y-1">
                     <li>トイレ: 便器横の壁や床</li>
@@ -77,7 +77,7 @@ export default function GuidePage() {
 
         {/* 業者選びのポイント */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-primary pl-4">信頼できる業者選びの7つのポイント</h2>
+          <h2 className="text-2xl font-bold mb-6 border-l-4 border-primary pl-4">信頼できる業者選びの7つのポイント</h2>
 
           <div className="space-y-4">
             {[
@@ -89,7 +89,7 @@ export default function GuidePage() {
               { title: "口コミ・評判が良いこと", desc: "実際に利用した人の口コミを確認しましょう。GoogleマップやSNSの口コミが参考になります。" },
               { title: "複数社から見積もりを取ること", desc: "最低2~3社から見積もりを取り比較することで、適正価格で依頼できます。極端に安い・高い業者は避けましょう。" },
             ].map((item, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-lg p-5">
+              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
                 <h3 className="font-bold text-gray-800 mb-2">
                   <span className="text-primary mr-2">{i + 1}.</span>{item.title}
                 </h3>
@@ -101,8 +101,8 @@ export default function GuidePage() {
 
         {/* 悪質業者の見分け方 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-danger pl-4">悪質業者の見分け方</h2>
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+          <h2 className="text-2xl font-bold mb-6 border-l-4 border-danger pl-4">悪質業者の見分け方</h2>
+          <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
             <p className="text-sm text-gray-700 mb-4">以下のような業者には注意してください。</p>
             <ul className="space-y-2 text-sm">
               {[
@@ -126,16 +126,16 @@ export default function GuidePage() {
 
         {/* サービス別リンク */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">トラブル別の詳しい解説</h2>
+          <h2 className="text-2xl font-bold mb-6">トラブル別の詳しい解説</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <Link href="/services/toilet/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">トイレ</Link>
-            <Link href="/services/water-leak/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">水漏れ</Link>
-            <Link href="/services/drain/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">排水つまり</Link>
-            <Link href="/services/kitchen/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">キッチン</Link>
-            <Link href="/services/bathroom/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">浴室</Link>
-            <Link href="/services/washroom/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">洗面所</Link>
-            <Link href="/services/sewer/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">下水・排水管</Link>
-            <Link href="/services/water-heater/" className="p-4 bg-gray-50 rounded-lg border hover:border-primary transition text-center text-sm font-bold">給湯器</Link>
+            <Link href="/services/toilet/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">トイレ</Link>
+            <Link href="/services/water-leak/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">水漏れ</Link>
+            <Link href="/services/drain/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">排水つまり</Link>
+            <Link href="/services/kitchen/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">キッチン</Link>
+            <Link href="/services/bathroom/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">浴室</Link>
+            <Link href="/services/washroom/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">洗面所</Link>
+            <Link href="/services/sewer/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">下水・排水管</Link>
+            <Link href="/services/water-heater/" className="p-4 bg-bg-light rounded-2xl border border-primary/10 hover:border-primary transition text-center text-sm font-bold">給湯器</Link>
           </div>
         </section>
 

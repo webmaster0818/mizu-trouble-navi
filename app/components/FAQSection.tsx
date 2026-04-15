@@ -23,11 +23,11 @@ export default function FAQSection({ faqs, pageUrl }: { faqs: FAQ[]; pageUrl?: s
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">よくある質問</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">よくある質問</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <details key={index} className="group border border-gray-200 rounded-lg overflow-hidden">
-            <summary className="flex items-center justify-between p-5 bg-white cursor-pointer hover:bg-gray-50 transition">
+          <details key={index} className="group border border-gray-200 rounded-2xl overflow-hidden">
+            <summary className="flex items-center justify-between p-5 bg-white cursor-pointer hover:bg-bg-light transition">
               <span className="font-bold text-gray-800 pr-4">
                 <span className="text-primary mr-2">Q.</span>
                 {faq.question}
@@ -38,9 +38,9 @@ export default function FAQSection({ faqs, pageUrl }: { faqs: FAQ[]; pageUrl?: s
                 </svg>
               </span>
             </summary>
-            <div className="p-5 bg-gray-50 border-t border-gray-200">
+            <div className="p-5 bg-bg-light border-t border-gray-200">
               <p className="text-gray-700 leading-relaxed">
-                <span className="text-accent font-bold mr-2">A.</span>
+                <span className="text-cta font-bold mr-2">A.</span>
                 {faq.answer}
               </p>
             </div>

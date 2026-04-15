@@ -23,7 +23,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav className="bg-gray-50 border-b border-gray-200">
+      <nav className="bg-bg-light border-b border-primary/10">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-500">
             {items.map((item, index) => (

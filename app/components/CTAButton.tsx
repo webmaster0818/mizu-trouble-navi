@@ -4,7 +4,7 @@ export default function CTAButton({ text = "無料見積もりを依頼する", 
   return (
     <Link
       href={href}
-      className={`inline-block bg-accent text-white font-bold px-8 py-4 rounded-lg text-lg hover:opacity-90 transition shadow-lg ${className}`}
+      className={`inline-block bg-cta text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-cta-dark transition shadow-lg ${className}`}
     >
       {text}
     </Link>

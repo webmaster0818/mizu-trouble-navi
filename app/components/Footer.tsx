@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-12 pb-8">
+    <footer className="bg-primary-deep text-blue-100 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-10">
           <div>
@@ -53,7 +53,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-blue-800 pt-8 text-center text-blue-300 text-sm">
           <p>&copy; 2026 水トラブル解決ナビ All rights reserved.</p>
         </div>
       </div>
