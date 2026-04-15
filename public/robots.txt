@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mizu-trouble-navi.pages.dev/sitemap.xml
